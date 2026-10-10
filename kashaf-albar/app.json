@@ -18,7 +18,7 @@
         "NSPhotoLibraryAddUsageDescription": "يحتاج كشاف البر إلى حفظ الصور داخل سجل اكتشافاتك على الجهاز.",
         "ITSAppUsesNonExemptEncryption": false
       },
-      "buildNumber": "2"
+      "buildNumber": "3"
     },
     "android": {
       "package": "com.kashafalbar.app",

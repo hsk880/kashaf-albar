@@ -148,7 +148,7 @@ public class KashafVisionModule: Module {
     let modelURL = compiledURL(kind: k)
     guard FileManager.default.fileExists(atPath: modelURL.path) else {
       let handler = VNImageRequestHandler(url: imageURL, options: [:])
-      let request = VNClassifyImageRequest(); request.imageCropAndScaleOption = .centerCrop
+      let request = VNClassifyImageRequest(); 
       try handler.perform([request])
       let preds = (request.results ?? []).prefix(5).map { ["label": $0.identifier, "confidence": Double($0.confidence)] as [String: Any] }
       return ["predictions": preds, "modelType": "apple-vision-generic", "speciesLevel": false, "message": "النموذج المتخصص لهذه الفئة غير مثبت. هذه تصنيفات عامة وليست تحديدًا موثوقًا للنوع العلمي."]
@@ -165,7 +165,7 @@ public class KashafVisionModule: Module {
       visionModel = loaded
     }
     let handler = VNImageRequestHandler(url: imageURL, options: [:])
-    let request = VNCoreMLRequest(model: visionModel); request.imageCropAndScaleOption = .centerCrop
+    let request = VNCoreMLRequest(model: visionModel); 
     try handler.perform([request])
     let observations = (request.results as? [VNClassificationObservation] ?? []).prefix(5)
     let predictions = observations.map { ["label": $0.identifier, "confidence": Double($0.confidence)] as [String: Any] }
