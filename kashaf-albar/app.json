@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "كشّاف البر",
+    "slug": "kashaf-albar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "kashafalbar",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kashafalbar.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "يستخدم كشاف البر الكاميرا لتصوير النباتات والحيوانات وتسجيل الاكتشافات.",
+        "NSPhotoLibraryUsageDescription": "يتيح كشاف البر اختيار صور النباتات والحيوانات من مكتبة الصور.",
+        "NSPhotoLibraryAddUsageDescription": "يحتاج كشاف البر إلى حفظ الصور داخل سجل اكتشافاتك على الجهاز."
+      },
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.kashafalbar.app",
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES"
+      ],
+      "versionCode": 1
+    },
+    "icon": "./assets/icon-concept.png",
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+      }
+    }
+  }
+}
