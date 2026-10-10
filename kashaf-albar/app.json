@@ -15,9 +15,10 @@
       "infoPlist": {
         "NSCameraUsageDescription": "يستخدم كشاف البر الكاميرا لتصوير النباتات والحيوانات وتسجيل الاكتشافات.",
         "NSPhotoLibraryUsageDescription": "يتيح كشاف البر اختيار صور النباتات والحيوانات من مكتبة الصور.",
-        "NSPhotoLibraryAddUsageDescription": "يحتاج كشاف البر إلى حفظ الصور داخل سجل اكتشافاتك على الجهاز."
+        "NSPhotoLibraryAddUsageDescription": "يحتاج كشاف البر إلى حفظ الصور داخل سجل اكتشافاتك على الجهاز.",
+        "ITSAppUsesNonExemptEncryption": false
       },
-      "buildNumber": "1"
+      "buildNumber": "2"
     },
     "android": {
       "package": "com.kashafalbar.app",
@@ -30,8 +31,9 @@
     "icon": "./assets/icon-concept.png",
     "extra": {
       "eas": {
-        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+        "projectId": "ab3879aa-4432-47da-9135-45effeaaf922"
       }
-    }
+    },
+    "owner": "knj888"
   }
 }
